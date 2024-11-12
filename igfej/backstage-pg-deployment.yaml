@@ -22,11 +22,12 @@ spec:
           envFrom:
             - secretRef:
                 name: pg-secrets
-          volumeMounts:
-            - mountPath: /var/lib/postgresql/data
-              name: postgresdb
-              subPath: data
-      volumes:
-        - name: postgresdb
-          persistentVolumeClaim:
-            claimName: pg-storage-claim
+          postgresqlDataDir: /var/lib/pgsql/data/userdata
+          #volumeMounts:
+          #  - mountPath: /var/lib/postgresql/data
+          #    name: postgresdb
+          #    subPath: data
+      #volumes:
+      #  - name: postgresdb
+      #    persistentVolumeClaim:
+      #      claimName: pg-storage-claim
