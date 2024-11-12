@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: postgres
-  namespace: cristtiano-pires-dev
+  namespace: cristiano-pires-dev
 spec:
   selector:
     app: postgres

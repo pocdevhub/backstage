@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
-  namespace: cristtiano-pires-dev
+  namespace: cristiano-pires-dev
 spec:
   replicas: 1
   selector:
