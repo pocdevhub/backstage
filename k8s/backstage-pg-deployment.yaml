@@ -28,5 +28,6 @@ spec:
               subPath: data
       volumes:
         - name: postgresdb
-          persistentVolumeClaim:
-            claimName: pg-storage-claim
+          #persistentVolumeClaim:
+          #  claimName: pg-storage-claim
+          emptyDir: {}
