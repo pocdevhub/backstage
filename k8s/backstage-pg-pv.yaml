@@ -19,7 +19,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pg-storage-claim
-  namespace: igfej-backstage
+  namespace: cristiano-pires-dev
 spec:
   storageClassName: manual
   accessModes:
