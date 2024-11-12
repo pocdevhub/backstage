@@ -26,6 +26,10 @@ spec:
             - mountPath: /var/lib/postgresql/data
               name: postgresdb
               subPath: data
+          securityContext:
+            runAsUser: 70        # UID do postgres
+            runAsGroup: 70       # GID do postgres
+            fsGroup: 70          # GID que permitirá acesso ao diretório
       volumes:
         - name: postgresdb
           #persistentVolumeClaim:
