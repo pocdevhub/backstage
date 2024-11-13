@@ -20,7 +20,9 @@ spec:
           ports:
             - name: http
               containerPort: 7007
-          command: [ "node", "packages/backend", "--no-node-snapshot", "--config", "app-config.yaml" ]  # Substitui o ENTRYPOINT
+          args:
+            - "--config"
+            - "app-config.yaml"
           envFrom:
             - secretRef:
                 name: postgres-secrets
