@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backstage
+  name: backstage-portal
   namespace: cristiano-pires-dev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backstage
+      app: backstage-portal
   template:
     metadata:
       labels:
-        app: backstage
+        app: backstage-portal
     spec:
       containers:
-        - name: backstage
+        - name: backstage-portal
           image: quay.io/tscristianopires/backstage:0.0.1
           imagePullPolicy: IfNotPresent
           ports:
