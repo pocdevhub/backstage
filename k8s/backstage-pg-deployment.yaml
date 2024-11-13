@@ -13,25 +13,34 @@ spec:
       labels:
         app: postgres
     spec:
+      serviceAccountName: default
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
       containers:
         - name: postgres
           image: docker.io/postgres:15.8-alpine3.20
           imagePullPolicy: 'IfNotPresent'
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRESQL_PORT_NUMBER
+              value: '5432'
+            - name: PGDATA
+              value: /var/lib/postgresql/data/userdata
+            - name: POSTGRES_USER
           envFrom:
             - secretRef:
                 name: pg-secrets
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgresdb
-              subPath: data
-          securityContext:
-            runAsUser: 70        # UID do postgres
-            runAsGroup: 70       # GID do postgres
-            fsGroup: 70          # GID que permitirá acesso ao diretório
+              subPath: data              
+      # Perceber como ativar o persistentVolume
       volumes:
         - name: postgresdb
-          #persistentVolumeClaim:
-          #  claimName: pg-storage-claim
           emptyDir: {}
+      #volumes:
+      #  - name: postgresdb
+      #    persistentVolumeClaim:
+      #      claimName: pg-storage-claim
+          #emptyDir: {}
