@@ -15,15 +15,15 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: quay.io/janus-idp/backstage-showcase:latest
+          image: quay.io/tscristianopires/backstage:0.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 7007
-          command: [ "node", "packages/backend", "--no-node-snapshot", "--config", "app-config.production.yaml" ]  # Substitui o ENTRYPOINT
-          args:
-            - "--config"
-            - "app-config.production.yaml"
+          #command: [ "node", "packages/backend", "--no-node-snapshot", "--config", "app-config.production.yaml" ]  # Substitui o ENTRYPOINT
+          #args:
+          #  - "--config"
+          #  - "app-config.production.yaml"
           envFrom:
             - secretRef:
                 name: postgres-secrets
