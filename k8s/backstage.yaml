@@ -20,7 +20,7 @@ spec:
           ports:
             - name: http
               containerPort: 7007
-          #command: [ "node", "packages/backend", "--no-node-snapshot", "--config", "app-config.production.yaml" ]  # Substitui o ENTRYPOINT
+          command: [ "node", "packages/backend", "--no-node-snapshot", "--config", "app-config.production.yaml" ]  # Substitui o ENTRYPOINT
           args:
             - "--config"
             - "app-config.production.yaml"
