@@ -113,9 +113,9 @@ upstream:
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
-    extraAppConfig:
-      - configMapRef: extra-app-config
-        filename: extra-app-config.yaml
+    #extraAppConfig:
+    #  - configMapRef: extra-app-config
+    #    filename: extra-app-config.yaml
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
