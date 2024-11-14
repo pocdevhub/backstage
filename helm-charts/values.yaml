@@ -15,28 +15,7 @@ global:
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
-    #plugins: []
-    plugins: 
-      - package: './dynamic-plugins/dist/backstage-plugin-catalog-backend-module-github-dynamic'
-        disabled: false
-        pluginConfig:
-          catalog:
-            providers:
-              github:
-                organization: "pocdevhub"
-                schedule:
-                  frequency: { minutes: 1 }
-                  timeout: { minutes: 1 }
-                  initialDelay: { seconds: 100 }
-      - package: >-
-          ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic      
-        disabled: false
-      #- package: './dynamic-plugins/dist/backstage-plugin-3scale-backend-dynamic'
-      #  disabled: false
-      - package: './dynamic-plugins/dist/backstage-plugin-kubernetes'
-        disabled: false
-      - package: './dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic'
-        disabled: false
+    plugins: []
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
