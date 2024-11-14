@@ -94,7 +94,8 @@ upstream:
       repository: rhdh/rhdh-hub-rhel9
       #repository: janus-idp/backstage-showcase
       #tag: latest
-      tag: "1.3"
+      # 1.3
+      tag: sha256:85fac2b994585159594e803651c888afe38ecc4978a36c600ab8e0a41016dc27
     command: []
     # FIXME (tumido): USE POSTGRES_PASSWORD and POSTGRES_USER instead of POSTGRES_ADMIN_PASSWORD
     # This is a hack. In {fedora,rhel}/postgresql images, regular user is forbidden
