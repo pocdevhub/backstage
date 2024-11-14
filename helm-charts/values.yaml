@@ -13,7 +13,7 @@ global:
     # listed in `includes` files. It also includes an `integrity` field that is used to verify the plugin package [integrity](https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata-description).
     
     # -------------------------------------------------------
-    #begin - Valores customizados  
+    #begin - Valores customizados - Plugins 
     # -------------------------------------------------------   
     #plugins: []
     plugins:
@@ -55,12 +55,17 @@ global:
       #  disabled: false
       #- package: './dynamic-plugins/dist/janus-idp-backstage-plugin-tekton'
       #  disabled: false
+      #----
+      # https://docs.redhat.com/en/documentation/red_hat_plug-ins_for_backstage/2.0/html/topology_plugin_for_backstage/topology-plugin-for-backstage#for-administrators
+      #--
       - package: './dynamic-plugins/dist/backstage-plugin-kubernetes'
         disabled: false
       - package: './dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic'
         disabled: false 
+      - package: './dynamic-plugins/dist/janus-idp-backstage-plugin-topology'
+        disabled: false
     # -------------------------------------------------------
-    #begin - Valores customizados  
+    #begin - Valores customizados - Plugins  
     # -------------------------------------------------------   
     
   # -- Shorthand for users who do not want to specify a custom HOSTNAME. Used ONLY with the DEFAULT upstream.backstage.appConfig value and with OCP Route enabled.
@@ -86,7 +91,8 @@ upstream:
   backstage:
     image:
       registry: quay.io
-      repository: rhdh/rhdh-hub-rhel9
+      #repository: rhdh/rhdh-hub-rhel9
+      repository: janus-idp/backstage-showcase
       tag: latest
     command: []
     # FIXME (tumido): USE POSTGRES_PASSWORD and POSTGRES_USER instead of POSTGRES_ADMIN_PASSWORD
