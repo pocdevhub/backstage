@@ -14,7 +14,7 @@ global:
     plugins: []
 
   # -- Shorthand for users who do not want to specify a custom HOSTNAME. Used ONLY with the DEFAULT upstream.backstage.appConfig value and with OCP Route enabled.
-  clusterRouterBase: "apps.example.com"
+  clusterRouterBase: ""apps.k8s.dev.local"
   # -- Custom hostname shorthand, overrides `global.clusterRouterBase`, `upstream.ingress.host`, `route.host`, and url values in `upstream.backstage.appConfig`.
   host: ""
   # -- Enable service authentication within Backstage instance
