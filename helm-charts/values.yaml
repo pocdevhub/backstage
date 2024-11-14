@@ -91,11 +91,11 @@ upstream:
   backstage:
     image:
       registry: quay.io
-      repository: rhdh/rhdh-hub-rhel9
-      #repository: janus-idp/backstage-showcase
-      #tag: latest
+      #repository: rhdh/rhdh-hub-rhel9
+      repository: janus-idp/backstage-showcase
+      tag: latest
       # 1.3
-      tag: "1.3"
+      #tag: "1.3"
     command: []
     # FIXME (tumido): USE POSTGRES_PASSWORD and POSTGRES_USER instead of POSTGRES_ADMIN_PASSWORD
     # This is a hack. In {fedora,rhel}/postgresql images, regular user is forbidden
