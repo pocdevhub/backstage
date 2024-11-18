@@ -9,13 +9,3 @@ data:
     app:
       title: Developer Hub - Poc - v0.2
       baseUrl: https://backstage-community-poc-developer-hub.apps.k8s.dev.local
-    backend:
-      auth:
-        externalAccess:
-            - type: legacy
-              options:
-                subject: legacy-default-config
-                secret: "pl4s3Ch4ng3M3"
-      baseUrl: https://backstage-community-poc-developer-hub.apps.k8s.dev.local
-      cors:
-        origin: https://backstage-community-poc-developer-hub.apps.k8s.dev.local
