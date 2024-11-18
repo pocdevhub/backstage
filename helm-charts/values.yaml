@@ -166,8 +166,8 @@ upstream:
     #begin - Valores customizados  
     # -------------------------------------------------------   
     extraAppConfig:
-      - configMapRef: app-config-rhdh
-        filename: app-config-rhdh.yaml
+      - configMapRef: app-config-backstage
+        filename: app-config-backstage.yaml
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
