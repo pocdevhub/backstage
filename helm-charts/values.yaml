@@ -47,9 +47,7 @@ global:
       #   disabled: false
       # integrate 3scale api management
       - package: './dynamic-plugins/dist/backstage-community-plugin-3scale-backend-dynamic'
-        disabled: false
-        pluginConfig:
-        
+        disabled: false        
       #- package: './dynamic-plugins/dist/janus-idp-backstage-plugin-keycloak-backend-dynamic'
       #  disabled: false
       #- package: './dynamic-plugins/dist/roadiehq-scaffolder-backend-argocd-dynamic'
