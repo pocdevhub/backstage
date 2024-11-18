@@ -45,8 +45,8 @@ global:
       #   disabled: false
       # - package: './dynamic-plugins/dist/janus-idp-backstage-plugin-quay'
       #   disabled: false
-        # integrate 3scale api management
-        - package: './dynamic-plugins/dist/backstage-plugin-3scale-backend-dynamic'
+      # integrate 3scale api management
+      - package: './dynamic-plugins/dist/backstage-plugin-3scale-backend-dynamic'
         disabled: false
       #- package: './dynamic-plugins/dist/janus-idp-backstage-plugin-keycloak-backend-dynamic'
       #  disabled: false
