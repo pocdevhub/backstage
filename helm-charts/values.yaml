@@ -93,7 +93,7 @@ upstream:
       registry: quay.io
       #repository: rhdh/rhdh-hub-rhel9
       #repository: janus-idp/backstage-showcase
-      repository: quay.io/tscristianopires/backstage-janus
+      repository: tscristianopires/backstage-janus
       #tag: latest
       tag: "0.0.1"
     command: []
