@@ -17,3 +17,4 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
+  owner: "group:default/backstage-moodle"
