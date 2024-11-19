@@ -170,8 +170,8 @@ upstream:
     #begin - Valores customizados  
     # -------------------------------------------------------   
     extraAppConfig:
-      - configMapRef: app-config-extra
-        filename: app-config-extra.yaml
+      - configMapRef: app-config-extra-sandbox
+        filename: app-config-extra-sandbox.yaml
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
