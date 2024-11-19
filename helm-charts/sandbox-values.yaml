@@ -30,11 +30,11 @@ global:
                   frequency: { minutes: 1 }
                   timeout: { minutes: 1 }
                   initialDelay: { seconds: 100 }
-       - package: >-
-           ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic      
-         disabled: false
-       - package: './dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic'
-         disabled: false
+      # - package: >-
+      #     ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic      
+      #   disabled: false
+      # - package: './dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic'
+      #   disabled: false
       # - package: './dynamic-plugins/dist/immobiliarelabs-backstage-plugin-gitlab-backend-dynamic'
       #   disabled: false
       # - package: './dynamic-plugins/dist/immobiliarelabs-backstage-plugin-gitlab'
@@ -73,7 +73,7 @@ global:
     # -------------------------------------------------------   
     
   # -- Shorthand for users who do not want to specify a custom HOSTNAME. Used ONLY with the DEFAULT upstream.backstage.appConfig value and with OCP Route enabled.
-  clusterRouterBase: "apps.k8s.dev.local"
+  clusterRouterBase: "apps.sandbox-m3.1530.p1.openshiftapps.com"
   # -- Custom hostname shorthand, overrides `global.clusterRouterBase`, `upstream.ingress.host`, `route.host`, and url values in `upstream.backstage.appConfig`.
   host: ""
   # -- Enable service authentication within Backstage instance
