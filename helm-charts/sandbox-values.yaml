@@ -97,8 +97,8 @@ global:
             clusterLocatorMethods:
               - type: 'config'
                 clusters:
-                  - name: sandbox-cluster
-                    url: https://api.sandbox-m3.1530.p1.openshiftapps.com:6443
+                  - url: https://api.sandbox-m3.1530.p1.openshiftapps.com:6443
+                    name: api-sandbox-m3-1530-p1-openshiftapps-com:6443
                     authProvider: 'serviceAccount'
                     skipTLSVerify: true
                     skipMetricsLookup: true
