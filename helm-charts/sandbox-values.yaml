@@ -210,7 +210,7 @@ upstream:
     #begin - Valores customizados  
     # -------------------------------------------------------   
     extraEnvVarsSecrets:
-      - backsatge-secrets
+      - backstage-secrets
     extraAppConfig:
       - configMapRef: app-config-extra-sandbox
         filename: app-config-extra-sandbox.yaml
