@@ -191,7 +191,7 @@ upstream:
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
-    serviceAccountName: backstage-sa
+    #serviceAccountName: backstage-sa
     extraAppConfig:
       - configMapRef: app-config-extra
         filename: app-config-extra.yaml
