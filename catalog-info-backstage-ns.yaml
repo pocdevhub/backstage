@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: pocdevhub/backstage
     #backstage.io/techdocs-ref: dir:.
-    #backstage.io/kubernetes-namespace: backstage
+    backstage.io/kubernetes-namespace: backstage
     #backstage.io/kubernetes-id: moodle
     #janus-idp.io/tekton : moodle
     #backstage.io/kubernetes-label-selector: 'app=moodle'
@@ -17,4 +17,4 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: "group:default/backstage-moodle"
+  owner: "group:default/tbd"
