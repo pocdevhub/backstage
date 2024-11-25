@@ -211,7 +211,8 @@ upstream:
       - name: THREESCALE_ACCESS_TOKEN
         value: 'U7myfeuSBDfifxJa'
       - name: NODE_TLS_REJECT_UNAUTHORIZED
-        value: 0
+        value: "0"
+    
     # -------------------------------------------------------
     # end - Valores customizados  
     # -------------------------------------------------------  
