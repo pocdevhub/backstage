@@ -30,7 +30,7 @@ global:
                   frequency: { minutes: 1 }
                   timeout: { minutes: 1 }
                   initialDelay: { seconds: 100 }
-      - package: './dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic'    
+      - package: './dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-github-dynamic'    
         disabled: false
       - package: './dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic'
         disabled: false
@@ -68,7 +68,7 @@ global:
         disabled: false
       # https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.3/html/authorization/enabling-and-giving-access-to-rbac#enabling-and-giving-access-to-rbac
       - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-rbac
-        disabled: false
+        disabled: true
     # -------------------------------------------------------
     #begin - Valores customizados - Plugins  
     # -------------------------------------------------------   
