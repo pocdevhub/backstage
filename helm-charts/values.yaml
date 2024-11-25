@@ -210,8 +210,8 @@ upstream:
         value: 'https://3scale-admin.apps.k8s.dev.local'
       - name: THREESCALE_ACCESS_TOKEN
         value: 'U7myfeuSBDfifxJa'
-    
-        serviceAccount: backstage-sa
+      - name: NODE_TLS_REJECT_UNAUTHORIZED
+        value: 0
     # -------------------------------------------------------
     # end - Valores customizados  
     # -------------------------------------------------------  
